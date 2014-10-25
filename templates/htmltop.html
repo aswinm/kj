@@ -1,26 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>KJ HOME APPLIANCE</title>
-<meta name="description" content="Blueprint: Responsive Full Width Tabs" />
-<meta name="keywords" content="responsive tabs, full width tabs, template, blueprint" />
-<meta name="author" content="Codrops" />
-<link rel="shortcut icon" href="../favicon.ico">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<link rel="stylesheet" href="/static/css/bootstrap.css">
+<link rel="stylesheet" href="/static/css/font-awesome.min.css">
 <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="/static/css/demo.css" />
-<link rel="stylesheet" type="text/css" href="/static/css/component.css" />
-<link href="/static/css/font-awesome.min.css" rel="stylesheet">
-<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+<script src="/static/js/jquery1-11-1.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<title>KJ HOME APPLIANCE</title>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+		$("#myCarousel").carousel();
+
+		});
+
+
+
+</script>
 <style>
 body{
 	font-family: 'Ubuntu', sans-serif;
 }
 </style>
+
 </head>
 <body>
 <div id="fb-root"></div>
@@ -31,53 +37,30 @@ js = d.createElement(s); js.id = id;
 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=335042280003362&version=v2.0";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="container">
-	<header class="clearfix">
-		<span>Best Quality... Least Price...</span>
-		<img src="/static/images/name.png" height=80px width=60%>	
-	</header>	
-	<div id="tabs" class="tabs">
-		<nav>
-			<ul>
-				<li><a href="#section-1"><i class="fa fa-home"></i><span> Home</span></a></li>
-				<li><a href="#section-2"><i class="fa fa-info"></i><span> About Us</span></a></li>
-				<li><a href="#section-3"><i class="fa fa-comments"></i><span> Contact</span></a></li>
-			</ul>
-		</nav>
-		<div class="content">
-			<section id="section-1">
-				<center>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.9845751390308!2d77.3383557!3d11.114526499999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907ac7513845f%3A0xe042cf94dfe6d955!2sRam+Nagar+3rd+St%2C+Ram+Nagar%2C+Tiruppur%2C+Tamil+Nadu+641602!5e0!3m2!1sen!2sin!4v1414059044913" width="40%" height="300" frameborder="0" style="border:0"></iframe>
-					<div class="fb-like-box" data-href="https://www.facebook.com/kjhomeappliance" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true" style="margin-left:2%;margin-top:0px;"></div>
-				</center>
-			</section>
 
-			<section id="section-2">
-				<center style="margin-top:30px;width:90%;margin:auto;">
-					<img src="/static/images/kj.jpg" height=400px width=80%><br>
-			<div style="text-align:justify;margin-top:10px;" >
-				We are happy to announce that  we are dealing with kitchen appliances of all leading brands like Preethi, Butterfly, Prestige, Premier, Cello, Eagle, Crompton greaves, Philips, Bajaj, Signoraware, Hawkins etc. for the past two decades. Our showroom is the most popular in and around Tirupur district for its BEST QUALITY and LEAST PRICE.<br><br>
-						The proprieter of K.J HOME APPLIANCE Mr.M.KARUPPUSAMY ,  has brought this showroom No.1 in Tirupur due to his dedication, efficiency and hardwork. He has realised that a customer is the most important person and so he trained all his staff to reach the ultimate goal ”CUSTOMER SATISFACTION” and this the only reason for the stability of this showroom. <br><br>
-								All the new products launched by any of the leading brands will be introduced first and foremost in our showroom.<br><br>
-										The management thanking wholeheartedly for the support rendered by the customers for the past years and we expect the same in future too.<br>
-										</div>
-										</center>
-			</section>
-			<section id="section-3">
-				<center style="margin-top:30px;">
+<header>
+	&nbsp;
+	<div class="row">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-6">
 
-					<i class="fa fa-phone"></i> 0421 433 8294<br><br>
-					<i class="fa fa-envelope"></i> info@kjhomeappliance.in<br><br>
-					<i class="fa fa-facebook"></i> <a href="http://facebook.com/kjhomeppliance" target="_blank" style="color:inherit;"> Facebook</a>
+			<a href="home.html"><img src="/static/images/name.png" height=100px width=400px class="name"></a>
+			<div class="slogan">Best Quality... Least Price...</div>
+		</div>
+		<div class="col-md-5" >
+			&nbsp;&nbsp;
 
-				</center>
-			</section>
-		</div><!-- /content -->
-	</div><!-- /tabs -->
-	<p class="info">&copy; Copyright KJ Home Appliance</p>
-</div>
-<script src="/static/js/cbpFWTabs.js"></script>
-<script>
-new CBPFWTabs( document.getElementById( 'tabs' ) );
-</script>
+			<div align="right">
+				<ul class="nav nav-pills">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About Us</a></li>
+					<li><a href="/catalog">Catalog</a></li>
+					<li><a href="/contacts">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</header>
 
