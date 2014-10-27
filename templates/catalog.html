@@ -1,0 +1,18 @@
+{% include "htmltop.html" %}
+<div class="row">
+		<div class="col-md-2" style="margin-top:30px;margin-left:5px;">
+			<ul class="nav nav-stacked">
+				{% for i in it_list %}
+				<li><a href="/products/{{ i.url }}">{{ i.name }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="col-md-7">
+			
+			{% for p in prod_list %}
+				<img src="{{p.image.url}}">
+			{% endfor %}
+		</div>
+		
+</div>
+{% include "htmlbottom.html" %}
