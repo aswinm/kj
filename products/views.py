@@ -20,7 +20,7 @@ def product(request,ptype):
     for i in c:
         it = Product.objects.filter(company = c,itemtype=ittype)
         if it:
-            prod_list[i.name] = it
+            prod_list[i] = it
 
     return render(request,"catalog.html",{"c_list":c,"prod_list":prod_list,"it_list":it_list})
     
